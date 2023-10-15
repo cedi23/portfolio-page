@@ -10,3 +10,6 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
     // You can now use these values to send the data to a server or perform other actions.
     console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+
+    // Get the current year and update the year in the copyright notice
+    document.getElementById("year").textContent = new Date().getFullYear();
