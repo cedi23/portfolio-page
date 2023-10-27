@@ -6,49 +6,35 @@ body, h1, h2, h3, p {
 
 /* Apply a background color */
 body {
-    background-color: #f0f0f0;
+    background-color: #e2d1a463;
     font-family: Arial, sans-serif;
 }
 
-/* Style the portfolio section */
-.portfolio {
+/* Style the Portfolio Section */
+.portfolio-section {
+    background-color: #e2d1a463;
+    padding: 40px;
     text-align: center;
-    padding: 20px;
 }
 
-.project {
-    margin: 20px;
-    display: inline-block;
-    text-align: left;
-}
-
-.project img {
-    max-width: 100%;
-}
-
-/* Style the contact section */
-.contact {
-    text-align: center;
-    padding: 20px;
-}
-
-form {
-    max-width: 400px;
+.portfolio-container {
+    max-width: 600px;
     margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
 }
 
-label, input, textarea {
-    display: block;
-    margin: 10px 0;
+.portfolio-container h2 {
+    font-size: 24px;
+    color: #333;
 }
 
-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
+/* ... (other CSS rules for portfolio items, if needed) */
+
+
 
 /* Add this CSS for the footer */
 footer {
@@ -72,68 +58,63 @@ footer {
     text-decoration: underline;
 }
 
-
-/* Style the Contact Section */
-.contact {
+/* Style the Contact Me Section */
+.contact-section {
+    background-color: #e2d1a463;
+    color: #fff;
+    padding: 60px 0;
     text-align: center;
-    padding: 40px;
-    background-color: #f5f5f5;
 }
 
-.contact h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-#contact-form {
-    max-width: 400px;
+.contact-container {
+    max-width: 600px;
     margin: 0 auto;
-    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-top: 10px;
+.contact-title {
+    font-size: 28px;
     color: #333;
+    margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.form-group {
+    margin: 20px 0;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block; /* Make labels block elements for better spacing */
+    margin-bottom: 5px; /* Add margin between labels and form elements */
+    color: #333; /* Change the label color */
+}
+
+input, textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-textarea {
-    height: 100px;
-}
-
 button {
-    background-color: #007bff;
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #636262;
 }
 
-/* Style the form inputs when focused */
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    outline: none;
-    border: 2px solid #007bff;
-}
+
+
+
 
 /* Add some margin between form elements */
 input[type="text"],
@@ -145,7 +126,7 @@ button {
 
 /* Style the About Me Section */
 .about-container {
-    background-color: #f5f5f5;
+    background-color: #e2d1a463;
     padding: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -180,7 +161,7 @@ button {
 
 /* Style the Home Section */
 .home-section {
-    background-color: #f5f5f5;
+    background-color: #e2d1a463;
     padding: 40px;
     text-align: center;
 }
@@ -223,7 +204,7 @@ button {
 
 /* Style the About Me Section */
 .about-section {
-    background-color: #f5f5f5;
+    background-color: #e2d1a463;
     padding: 40px;
     text-align: center;
 }
@@ -264,14 +245,35 @@ button {
     display: block;
 }
 
-/* Style the Portfolio Section */
-.portfolio-section {
-    background-color: #f5f5f5;
-    padding: 40px;
-    text-align: center;
+/* Style the Navbar */
+.navbar {
+    background-color: #333;
+    color: #f5f5f5 !important; /* Add !important to ensure the text color takes precedence */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.portfolio-section h2 {
-    font-size: 24px;
-    color: #333;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    padding: 10px;
+    color: #f5f5f5
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+}
+
+/* Add space to the content below the fixed navbar */
+body {
+    padding-top: 50px;
 }
