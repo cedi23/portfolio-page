@@ -6,7 +6,7 @@ body, h1, h2, h3, p {
 
 /* Apply a background color */
 body {
-    background-color: #e2d1a463;
+    background-color: #fff;
     font-family: Arial, sans-serif;
 }
 
@@ -17,22 +17,42 @@ body {
     text-align: center;
 }
 
-.portfolio-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+.portfolio-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding: 20px;
+    overflow: hidden;
 }
 
-.portfolio-container h2 {
+.portfolio-image {
+    flex: 1;
+}
+
+.portfolio-image img {
+    width: 75%;
+    max-width: 100%;
+    display: block;
+}
+
+.portfolio-content {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+.portfolio-content h2 {
     font-size: 24px;
     color: #333;
 }
 
-/* ... (other CSS rules for portfolio items, if needed) */
+.portfolio-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 
 
 
@@ -122,36 +142,6 @@ input[type="email"],
 textarea,
 button {
     margin-bottom: 15px;
-}
-
-/* Style the About Me Section */
-.about-container {
-    background-color: #e2d1a463;
-    padding: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.intro-image img {
-    max-width: 20%;
-}
-
-.intro-text {
-    flex: 1;
-}
-
-.intro-text h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.intro-text p {
-    font-size: 18px;
-    line-height: 1.5;
 }
 
 /* Add space between social links and your name */
