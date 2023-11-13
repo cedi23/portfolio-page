@@ -13,4 +13,26 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     window.location.href = mailtoLink;
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const windowHeight = window.innerHeight;
+                const elementHeight = targetElement.offsetHeight;
+
+                const scrollToY = targetElement.offsetTop - (windowHeight - elementHeight) / 2;
+
+                window.scrollTo({
+                    top: scrollToY,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
 
