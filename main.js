@@ -36,3 +36,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+
+// Function to scroll to the contact section
+function scrollToContact() {
+    const contactSection = document.getElementById('Heading4');
+
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.error('Contact section not found!');
+    }
+}
+
+
+
+
+
