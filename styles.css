@@ -84,6 +84,25 @@ body {
     transform: translateY(-50%); /* Center vertically */
 }
 
+/* Add this CSS to align "IT-Projects" with other sections */
+.portfolio-content {
+    min-height: 300px; /* Adjust the height as needed */
+}
+
+/* Additional style for the subtitles */
+.section h3 {
+    margin-bottom: 10px; /* Adjust the margin between subtitle and list */
+    font-size: 30px; /* Adjust the font size of the subtitles */
+}
+
+/* Adjust the margin between the subtitles and the lists */
+.content-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+
 
 
 
