@@ -77,11 +77,13 @@ body {
     font-size: 12px; /* Adjust the size of the bullet point */
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
+    margin-left: -1.3em; /* Adjust the horizontal position of the bullet point */
     position: absolute;
     left: 0;
-    top: 0.8em; /* Adjust the vertical position of the bullet point */
+    top: 50%; /* Align with the middle of the text */
+    transform: translateY(-50%); /* Center vertically */
 }
+
 
 
 
