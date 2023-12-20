@@ -1,3 +1,6 @@
+
+
+// Function contact Email
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -13,6 +16,8 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     window.location.href = mailtoLink;
 });
 
+
+// Function to scroll by clicking in Navbar
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('a.nav-link').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
