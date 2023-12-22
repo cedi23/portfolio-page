@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Function to scroll to the contact section
+
+// Function Let's Talk button
 function scrollToContact() {
     const contactSection = document.getElementById('Heading4');
 
